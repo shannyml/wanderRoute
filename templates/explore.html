@@ -1,0 +1,331 @@
+{% extends "base.html" %}
+
+    {% block head %}
+
+    <title>Travel Guide</title>
+
+    <head>
+      <div class="row p-3">
+          <header style="text-align: center;"><img src="/static/images/title.png" width="300px"></header> 
+    </div>
+    <div class="container-guides">
+      <div class="d-flex p-2 justify-content-center">
+      <section id="intro">
+        <h3>Popular Destination Guides and Itinerary
+        </h3>
+      </section>
+      </div>
+    </div>
+  </head>
+
+  <br>
+  
+  <body>
+    <div class="d-flex p-2 justify-content-center">
+    <div class="container-explore">
+      <div class="row">
+        <div class="col-6">
+      <section id="nyc">
+        <table>
+        <tr>
+          <td><b>New York City, USA</b> <button type="submit" id="save-nyc">Save Itinerary</button></td>
+        </tr>
+        <tr>
+          <td><img src="/static/images/nyc.jpeg" width="400px" height="270px"></td>
+        </tr>
+        <tr>
+          <td>Central Park</td>
+        </tr>
+        <tr>
+          <td>Time Square</td>
+        </tr>
+        <tr>
+          <td>Statues of Liberty</td>
+        </tr>
+        <tr>
+          <td>Empire State Building</td>
+        </tr>
+        <tr>
+          <td>Broklyn Brdige</td>
+        </tr>
+        </table>
+      </section>
+    </div>
+
+    <div class="col-6">
+      <section id="paris">
+        <table>
+          <tr>
+            <td><b>Paris, France</b> <button type="submit" id="save-paris">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/paris.jpeg" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>Eiffel Tower</td>
+          </tr>
+          <tr>
+            <td>Louvre Museum</td>
+          </tr>
+          <tr>
+            <td>Arc de Tromphe</td>
+          </tr>
+          <tr>
+            <td>Cathedrale Notre-Dame de Paris</td>
+          </tr>
+          <tr>
+            <td>Musée d'Orsay</td>
+          </tr>
+          </table>
+      </section>
+      </div>
+    </div>
+
+    <br>
+    
+    
+      <div class="row">
+        <div class="col-6">
+      <section id="seoul">
+        <table>
+          <tr>
+            <td><b>Seoul, South Korea </b><button type="submit" id="save-seoul">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/seoul.webp" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>Gyeongbokgung Palace</td>
+          </tr>
+          <tr>
+            <td>N Seoul Tower</td>
+          </tr>
+          <tr>
+            <td>Bukchon Hanok Village</td>
+          </tr>
+          <tr>
+            <td>Dongdaemun Design</td>
+          </tr>
+          <tr>
+            <td>Cheonggyecheon</td>
+          </tr>
+          </table>
+      </section>
+    </div>
+
+    <div class="col-6">
+      <section id="london">
+        <table>
+          <tr>
+            <td><b>London, England </b><button type="submit" id="save-london">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/London.jpeg" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>London Eye</td>
+          </tr>
+          <tr>
+            <td>Buckingham Palace</td>
+          </tr>
+          <tr>
+            <td>Tower of London</td>
+          </tr>
+          <tr>
+            <td>Westminster Abbey</td>
+          </tr>
+          <tr>
+            <td>Big Ben</td>
+          </tr>
+          </table>
+      </section>
+      </div>
+    </div>
+
+    <br>
+
+    
+      <div class="row">
+        <div class="col-6">
+      <section id="bangkok">
+        <table>
+          <tr>
+            <td><b>Bangkok, Thailand </b><button type="submit" id="save-bangkok">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/bangkok.jpeg" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>Wat Arun Ratchawararam</td>
+          </tr>
+          <tr>
+            <td>The Grand Palace</td>
+          </tr>
+          <tr>
+            <td>Chatuchak Weekend Market</td>
+          </tr>
+          <tr>
+            <td>Temple of the Emerald Buddha</td>
+          </tr>
+          <tr>
+            <td>Wat Traimit (Golden Buddha)</td>
+          </tr>
+          </table>
+      </section>
+    </div>
+
+    <div class="col-6">
+      <section id="rome">
+        <table>
+          <tr>
+            <td><b>Rome, Italy </b><button type="submit" id="save-rome">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/rome.webp" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>Colosseum</td>
+          </tr>
+          <tr>
+            <td>Trevi Fountain</td>
+          </tr>
+          <tr>
+            <td>Pantheon</td>
+          </tr>
+          <tr>
+            <td>St. Peter's Basilica</td>
+          </tr>
+          <tr>
+            <td>Roman Forum</td>
+          </tr>
+          </table>
+      </section>
+      </div>
+    </div>
+
+    <br>
+
+   
+      <div class="row">
+        <div class="col-6">
+      <section id="sydney">
+        <table>
+          <tr>
+            <td><b>Sydney, Australia </b><button type="submit" id="save-sydney">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/sydney.jpeg" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>Sydney Opera House</td>
+          </tr>
+          <tr>
+            <td>Sydney Harbour Bridge</td>
+          </tr>
+          <tr>
+            <td>Royal Botanic Garden Sydney</td>
+          </tr>
+          <tr>
+            <td>Darling Harbour</td>
+          </tr>
+          <tr>
+            <td>Queen Victoria Building</td>
+          </tr>
+          </table>
+      </section>
+    </div>
+
+    <div class="col-6">
+      <section id="johannesburg">
+        <table>
+          <tr>
+            <td><b>Johannesburg, South Africa </b><button type="submit" id="save-johannesburg">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/Johannesburg.jpeg" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>Gold Reef City Theme Park</td>
+          </tr>
+          <tr>
+            <td>Apartheid Museum</td>
+          </tr>
+          <tr>
+            <td>Johannesburg Zoo</td>
+          </tr>
+          <tr>
+            <td>Mandela's House</td>
+          </tr>
+          <tr>
+            <td>South African National Museum of</td>
+          </tr>
+          </table>
+      </section>
+    </div>
+    </div>
+
+    <br>
+
+   
+      <div class="row">
+        <div class="col-6">
+      <section id="rio">
+        <table>
+          <tr>
+            <td><b>Rio de Janeiro, Italy </b><button type="submit" id="save-rio">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/rio.jpeg" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>Christ the Redeemer</td>
+          </tr>
+          <tr>
+            <td>Maracanã</td>
+          </tr>
+          <tr>
+            <td>Escadaria Selarón</td>
+          </tr>
+          <tr>
+            <td>Jardim Botânico do Rio de Janeiro</td>
+          </tr>
+          <tr>
+            <td>Museu do Amanhã</td>
+          </tr>
+          </table>
+      </section>
+    </div>
+
+    <div class="col-6">
+      <section id="toronto">
+        <table>
+          <tr>
+            <td><b>Toronto, Canada </b><button type="submit" id="save-toronto">Save Itinerary</button></td>
+          </tr>
+          <tr>
+            <td><img src="/static/images/toronto.jpeg" width="400px" height="270px"></td>
+          </tr>
+          <tr>
+            <td>CN Tower</td>
+          </tr>
+          <tr>
+            <td>St. Lawrence Market/td>
+          </tr>
+          <tr>
+            <td>Casa Loma</td>
+          </tr>
+          <tr>
+            <td>Harbourfront Centre</td>
+          </tr>
+          <tr>
+            <td>CF Toronto Eaton Centre</td>
+          </tr>
+          </table>
+      </section>
+    </div>
+    </div>
+    </div>
+
+
+  </body>
+{% endblock %}

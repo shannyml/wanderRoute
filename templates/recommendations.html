@@ -1,0 +1,91 @@
+{% extends "base.html" %}
+    {% block head %}
+
+    <title>Recommendations</title>
+
+        <link rel="stylesheet" href="/static/css/maps.css">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Getting the best places in town</title>
+        <div class="row p-3">
+        <header>Build Your Travel Itinerary</header>
+        </div>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row p-4">
+                <div class="col-6">
+        <section>
+            <h3>Get the Best Tourist Attractions</h3>
+            <div class="row">
+                <form label action ="/get-recommendations" for="interested-destination" method="POST">Destination
+                <input type="text" id="interested-destination" name="interested-destination">
+                Type: <select id="location-type" name = "location-type">
+                    <option disabled selected hidden >Type of Location</option>
+                    <option value="amusement_park">Amusement Park</option>
+                    <option value="museum">Museum</option>
+                    <option value="park">Park</option>
+                    <option value="restaurant">Restaurant</option>
+                    <option value="shopping_mall">Shopping</option>
+                    <option value="tourist_attraction">Tourist Attractions</option>
+                </select>
+            </div>
+            <div class="row py-2">
+                <!-- put in container - row and add padding py (adds to top and bottom) -->
+                <p><button id="get-recommendations">Get recommendations</button></p>
+                </form>
+            </div>
+        </section>
+        </div>
+
+        <div class="col-6">
+            <section>
+                <h3>Itinerary List</h3>
+                    <form id="submit-locations" action="/get-itinerary-info" method="POST">
+                        <div>Itinerary Name: {{ itinerary_name }}</div>
+                            <input id="user-id" type="hidden" name="user-id" value={{ user_id }}>
+                            <input id ="itinerary-id" type="hidden" name="itinerary-id" value={{ itinerary_id }}>
+                            <!-- <form id="submit-locations" action="/new-itinerary" method="POST"> -->
+                            <ul id="itinerary-list">
+                            </ul>
+                            <button id="submit-btn" type="submit">Create Itinerary</button>
+                    </form>
+            </section>
+
+        </div>
+    </div>
+
+        </div>
+
+
+        <div class="container">
+            <div style="height: 100px">
+            <div class="row p-4">
+                <div class="col-6">
+                    <section>
+                        <h3> Recommended Tourist Attractions</h3>
+                            <ul class="location-results">
+                            </ul>
+                    </section>
+                </div>
+
+            <div class="col-6">
+                <section class="map" style = "height: 550px; width: 550px">
+                    <h3> Map </h3>
+                    <div id ="map"></div>
+                </section>
+            </div>
+            </div>
+            </div>
+        </div>
+
+        <script src="/static/js/ajax.js"></script>
+        <script
+            async
+            src="https://maps.googleapis.com/maps/api/js?key={{API_KEY}}&callback=initMap">
+        </script>
+    </body>
+    
+{% endblock %}

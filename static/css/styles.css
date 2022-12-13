@@ -1,0 +1,82 @@
+html, body {
+    background-color: #F5EBE0;
+    background-size: cover;
+    font-family: Calibri;
+    color: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* buttons */
+#bt-login, #bt-explore, #login-button, #create-user-button,#share, #create-itinerary,
+#get-recommendations, #submit-btn, #weather-bt, .btn {
+    background-color: #D8AC9C;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+#recommendation-bt{
+    background-color: #F2D1D1;
+    border-radius: 12px;
+    border: 1px solid black
+}
+
+#save-nyc, #save-paris, #save-seoul, #save-london, #save-bangkok, #save-rome,
+#save-sydney, #save-johannesburg, #save-rio, #save-toronto, #profile-explore-bt, #profile-weather-bt {
+    background-color: #D8AC9C;
+    border-radius: 12px;
+    border: none
+}
+
+/* homepage */
+.container-homepage {
+    background-color: #F5EBE0
+}
+.container-info {
+    background-color: #F5EBE0;
+	justify-content: space-evenly;
+	align-items: center;
+}
+#intro {
+    align-items: center;
+}
+
+/* travel guide */
+.container-guides {
+    background-color: #F5EBE0;
+}
+
+.container-explore {
+    background-color: #F5EBE0;
+}
+
+/* login */
+.container-account {
+    background-color: #F5EBE0;
+}
+
+/* weather table */
+.forecast-results {
+    border: 1px solid;
+    width: 100%;
+    text-align: center;
+
+}
+
+.forecast-results tr td{
+    border: 1px solid;
+    text-align: center;
+}
+
+.location-results {
+    list-style-type: none;
+}
+
+.create-itinerary {
+    justify-content: center;
+    align-items: center;
+}
+

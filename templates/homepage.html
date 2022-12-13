@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+    {% block head %}
+    
+    <title>Wander Route</title>
+
+    <div class="container-homepage">
+
+      <div class="row py-3">
+        <header style="text-align: center;"><img src="/static/images/title.png" width="300px"></header> 
+      </div>
+    </div>
+
+    <body>
+      <div class="d-flex py-2 justify-content-center align-items-center">
+
+        <div class="row align-items-center">
+
+          <div class="col-1">
+
+          </div>
+          
+          <div class="col-5">
+            <div class="d-flex justify-content-center align-items-center">
+          <section id="intro">
+            <p style="font-size: 25px"><i>Like to plan out and organize your travel itinerary?</i></p><br>
+            <p style="font-size: 20px">Travel Log lets you plan, build and organize your travel itinerary.
+                Create an account to start planning!
+            </p>
+            <div class="container-fluid">
+            <a href="/login">
+              <button type="click" id="bt-login">Sign Up/Log In</button>
+            </a>
+            <a href="/explore">
+              <button type="click" id="bt-explore">Travel Guides</button>
+            </a>
+            </div>
+          </section>
+      </div>
+      </div>
+
+
+          <div class="col-6">
+            <div class="d-flex justify-content-center align-items-center">
+          <section id="travel-pic">
+            <img src="/static/images/heart-travel.png" width="550">
+          </section>
+          </div>
+        </div>
+
+      </div>
+      </div>
+    
+
+  </body>
+{% endblock %}

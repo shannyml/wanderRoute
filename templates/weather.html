@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+  {% block head %}
+
+  <title>Weather</title>
+
+  <div class="row p-3">
+        <header style="text-align: center;"><img src="/static/images/title.png" width="300px"></header> 
+    </div>
+    <body>
+    <div class="container-weather">
+        <div class="row py-3 px-5">
+    <h3>Prep for your vacation, get weather forecast for the next 16 days</h3>
+    <section id="input-destination">
+            <form action = "/get-weather" id="input-destination">
+                <label for="user-destination">Destination:</label>
+                    <input type ="text" id="user-destination" name="user-destination">
+                <button id ="weather-bt" type="submit">Get weather</button>
+            </form>
+    </section>
+    </div>
+    </div>
+    <section>
+        <h2 style="text-align: center;">Weather Forecast</h2>
+        <div class="d-flex py-3 px-5 justify-content-center align-items-center">
+            <table class ="forecast-results table-bordered">
+                <tr>
+                <th>Date</th>
+                <th>Temperature</th>
+                <th>Condition</th>
+                <th>Minimum Temperature</th>
+                <th>Maximum Temperature</th>
+                </tr>
+            </table>
+            </div>
+            </section>
+  <script src="/static/js/weather.js"></script>
+    </body>
+{% endblock %}

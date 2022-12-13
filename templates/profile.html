@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+    {% block head %}
+
+    <title>Profile</title>
+
+    <div class="row p-3">
+        <header style="text-align: center;"><img src="/static/images/title.png" width="300px"></header> 
+    </div>
+  <body>
+
+    <h2 style="padding-left: 45px; padding-top: 10px;"> Profile Information</h2>
+
+
+    <div class="container-profile p-5">
+
+      <div class="row">
+
+        <div class="col-5">
+
+    <section id="Profile Information"></section>
+    <h3>Welcome, {{ fname }} </h3>
+ 
+    <a href="/create-itinerary"><button id="create-itinerary">Create New Itinerary</button></a>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <p>Explore Popular Destinations</p>
+    <a href="/explore">
+      <button type="click" id="profile-explore-bt">Travel Guides</button>
+    </a>
+    <br><br>
+    <p>Check the weather for your upcoming destination</p>
+    <a href="/weather">
+      <button type="click" id="profile-weather-bt">Weather</button>
+    </a>
+
+  </div>
+
+    <div class="col-7">
+    <h3>Your Itinerary</h3>
+    <table class="table user-itinerary">
+      <tr>
+        <form action="/edit-itinerary", method="POST">
+        {% for itinerary in itineraries %}
+          <td><strong>{{ itinerary.itinerary_name }}</strong></td>
+          <td>{{ itinerary.start_date }} - {{ itinerary.end_date }}</td>
+          <!-- <td> <button id="edit" type="submit" name="itinerary-id" value={{ itinerary.itinerary_id }}>Edit Itinerary</button> </td> -->
+          <!-- <td> <button id="share" type="submit" formaction="/share-itinerary" name="itinerary-id" value={{ itinerary.itinerary_id }}>Share Itinerary</button> </td>
+         -->
+      </tr>
+          {% for location in itinerary.locations %}
+            <tr>
+              <td><li>{{location.location_name}}</li></td>
+            {% endfor %}
+            </tr>
+            {% endfor %}
+          </form>
+    </table>
+    </div>
+    </div>
+    </div>
+  </body>
+  {% endblock %}

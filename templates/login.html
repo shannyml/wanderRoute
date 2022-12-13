@@ -1,0 +1,151 @@
+{% extends "base.html" %}
+
+  {% block head %}
+  
+  <title>Account</title>
+
+  <div class="container-homepage">
+
+    <div class="row p-3">
+        <header style="text-align: center;"><img src="/static/images/title.png" width="300px"></header> 
+      </div>
+</div>
+
+  <body>
+    <h2 style="text-align: center"> Login or Create an account to start planning your trip</h2>
+
+    <div class="container-account p-4 justify-content-center align-items-center">
+
+    <!-- MAIN ROW FOR THE WHOLE CONTAINER -->
+      <div class="row">
+
+        <!-- FIRST COLUMN: LOGIN FORM -->
+        <div class ="col-6 justify-content-center align-items-center"> 
+            <!-- row 1: login header -->
+            <div class="row">
+                <div class="col-4">
+                </div>
+                <div class="col-8">
+                    <h4>Log In</h4>
+                </div>
+            </div>
+        
+        <form action="/login" method="POST">
+            <!-- row: email  -->
+            <div class="row">
+                <!-- column: email spacing -->
+                <div class="col-4">
+                </div>
+                <!-- column: email label -->
+                <div class="col-2">
+                    <p>
+                        <label>Email </label>
+                    </p>
+                </div>
+                <!-- column: email input -->
+                <div class="col-6">
+                    <p>
+                        <input type="text" name="login-email">
+                    </p>
+                </div>
+            </div>
+            <!-- row: password  -->
+            <div class="row">
+                <!-- column: password spacing -->
+                <div class="col-4">
+                </div>
+                <!-- column: password label -->
+                <div class="col-2">
+                    <p>
+                        <label>Password </label>
+                    </p>
+                </div>
+                <!-- column: password label -->
+                <div class="col-6">
+                    <p>
+                        <input type="password" name="login-password">
+                    </p>
+                </div>
+            </div>
+            <!-- row: submit button  -->
+            <div class="row">
+                <!-- column: submit spacing -->
+                <div class="col-6">
+                </div>
+                <!-- column: submit button -->
+                <div class="col-4">
+                    <p>
+                        <input type="submit" id="login-button">
+                    </p>
+                </div>
+            </div>
+        </form>
+        </div>
+
+    <div class ="col-6 justify-content-center align-items-center">
+        <div class="row">
+            <div class="col">
+                <h4>Create an Account</h4>
+            </div>
+        <form action="/create_user" method="POST">
+            <div class="row">
+                <div class="col-3">
+                    <p>
+                        <label>First Name</label>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p>
+                        <input type="text" name="fname">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>
+                        <label>Last Name</label>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p>
+                        <input type="text" name="lname">
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>
+                        <label>Email </label>
+                    </p>
+                </div> 
+                <div class="col-6">   
+                    <p>
+                        <input type="text" name="email">
+                    </p>
+                </div>
+            <div class="row">
+                <div class="col-3">
+                    <p>
+                        <label>Password </label>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <p>
+                        <input type="password" name="password">
+                    </p>
+                </div>
+            <div class="row">
+                <div class="col-3">
+                </div>
+                <div class="col-4">
+                    <p>
+                        <input type="submit" id="create-user-button">
+                    </p>
+                </div>
+  </form>
+  </div>
+  </div>
+  </div>
+
+  </body>
+  {% endblock %}

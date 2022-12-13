@@ -1,0 +1,31 @@
+[{
+    "itinerary_id": 1,
+    "place_id": "ChIJ0xG7n03GwoARsDH_OyyMcrM"
+}, {
+    "itinerary_id": 2,
+    "place_id": "ChIJf2ekX5wys1IRi0SY3SQDO-M"
+}, { 
+    "itinerary_id": 3,
+    "place_id": "ChIJp3CqeRd-j4ARYI0i8e_kGKY"
+}, {
+    "itinerary_id": 4,
+    "place_id": "ChIJu_tp4r4sDogR_dRFCX8wCc8"
+}, {
+    "itinerary_id": 5,
+    "place_id": "ChIJEWIFw7dqkFQRDw3cK6AcdXA"
+}, {
+    "itinerary_id": 6,
+    "place_id": "ChIJyYFNNb1754gRne97uHl5JSs"
+}, {
+    "itinerary_id": 7,
+    "place_id": "ChIJK3vOQyNawokRXEa9errdJiU"
+}, {
+    "itinerary_id": 8,
+    "place_id": "ChIJeUzG1BGmIIYR-kIMkAi8mwk"
+}, {
+    "itinerary_id": 9,
+    "place_id": "ChIJhdC_YH1w44kRSX0V1oo9pt0"
+}, {
+    "itinerary_id": 10,
+    "place_id": "ChIJletJO1lmZIgRq0UiSZV5AGM"
+}]
